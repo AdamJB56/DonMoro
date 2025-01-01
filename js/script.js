@@ -70,15 +70,15 @@ function inicio() {
         let tipo = ev.target.getAttribute("tipo");
 
         if (tipo == "django") {
-            otrosProyectos.style.background = "linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),url(/media/img/fondoDjango.jpg) center / cover no-repeat fixed";
+            otrosProyectos.style.background = "linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),url(./media/img/fondoDjango.jpg) center / cover no-repeat fixed";
         } else if (tipo == "tienda") {
-            otrosProyectos.style.background = "linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),url(/media/img/carr4.jpeg) center / cover no-repeat fixed";
+            otrosProyectos.style.background = "linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),url(./media/img/carr4.jpeg) center / cover no-repeat fixed";
         } else if (tipo == "lebron"){
-            otrosProyectos.style.background = "linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),url(/media/img/fondoLebron.jpg) center / cover no-repeat fixed";
+            otrosProyectos.style.background = "linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),url(./media/img/fondoLebron.jpg) center / cover no-repeat fixed";
         } else if (tipo == "museo") {
-            otrosProyectos.style.background = "linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),url(/media/img/negros.gif) center / cover no-repeat fixed";
+            otrosProyectos.style.background = "linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),url(./media/img/negros.gif) center / cover no-repeat fixed";
         } else if (tipo == "rocas") {
-            otrosProyectos.style.background = "linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),url(/media/img/carr9.jpeg) center / cover no-repeat fixed";
+            otrosProyectos.style.background = "linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),url(./media/img/carr9.jpeg) center / cover no-repeat fixed";
         }
     }
 
