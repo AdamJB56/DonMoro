@@ -1,37 +1,37 @@
 
 @font-face {
     font-family: 'Rothwood';
-    src: url(/media/fonts/FontsFree-Net-Rothwood-Book.ttf);
+    src: url(./media/fonts/FontsFree-Net-Rothwood-Book.ttf);
 }
 
 @font-face {
     font-family: 'Rothwood Thin';
-    src: url(/media/fonts/Rothwood-Thin.otf);
+    src: url(./media/fonts/Rothwood-Thin.otf);
 }
 
 @font-face {
     font-family: 'Django';
-    src: url(/media/fonts/The-Django.ttf);
+    src: url(./media/fonts/The-Django.ttf);
 }
 
 @font-face {
     font-family: 'Stardew Valley';
-    src: url(/media/fonts/Stardew_Valley.ttf);
+    src: url(./media/fonts/Stardew_Valley.ttf);
 }
 
 @font-face {
     font-family: 'Lakers';
-    src: url(/media/fonts/Lakers.otf);
+    src: url(./media/fonts/Lakers.otf);
 }
 
 @font-face {
     font-family: 'Vibes';
-    src: url(/media/fonts/GreatVibes.ttf);
+    src: url(./media/fonts/GreatVibes.ttf);
 }
 
 @font-face {
     font-family: 'Merienda';
-    src: url(/media/fonts/Merienda.ttf);
+    src: url(./media/fonts/Merienda.ttf);
 }
 
 
@@ -242,7 +242,7 @@ header {
     margin-right: 2vw;
     
     /* Efecto Parallax */
-    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),url(/media/img/carr2.jpeg);
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),url(./media/img/carr2.jpeg);
     background-attachment: fixed;
     height: 100%;
     background-position: center;
