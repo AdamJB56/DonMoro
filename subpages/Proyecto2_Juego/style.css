@@ -1,0 +1,134 @@
+@font-face {
+    font-family: "Bruce";
+    src: url(./fonts/Bruce\ Forever.ttf);
+}
+
+
+body {
+    text-align: center;
+    font-family: 'Bruce';
+    background-color: #000000;
+    color: #ffffff;
+    overflow-wrap: break-word;
+}
+
+button, select {
+    font-family: 'Bruce';
+    border-radius: 8px;
+    background-color: #000000;
+    color: #ffffff;
+    transition: all 1s ease-out;
+    box-shadow: #ffffff 1px 1px;
+    max-width: 80%;
+}
+
+input, label, select {
+    max-width: 80%;
+    font-family: 'Bruce';
+}
+
+button:active, select:active {
+    background-color: #6C697C;
+}
+
+button:hover, select:hover {
+    box-shadow: #ffffff 0px 8px 12px;
+}
+
+button:disabled, select:disabled {
+    font-family: 'Bruce';
+    border-radius: 8px;
+    background-color: #0000005f;
+    color: #ffffff5f;
+}
+
+button:disabled:hover, select:disabled:hover {
+    box-shadow: none;
+}
+
+/* Div global */
+#pantalla {
+    display: grid;
+    grid-template-rows: 5% 1fr;
+    grid-template-columns: 20% 80%;
+    border: groove 5px #9082D1;
+    max-height: 95vh;
+}
+
+#titulo {
+    grid-column: 1 / -1;
+    height: 100%;
+}
+
+h1 {
+    margin-block-start: 0;
+    margin-block-end: 0;
+    font-size: 4vh;
+}
+
+/* Interfaz completa (Parte izquierda) */
+#interfaz {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Interfaz superior */
+#interfazNombre {
+    background-color: #9082D1;
+    height: 42.5vh;
+    border: solid 5px black;
+    align-content: center;
+}
+
+/* Interfaz inferior */
+#interfazJuego {
+    background-color: #6C697C;
+    height: 42.5vh;
+    border: solid 5px black;
+    align-content: center;
+}
+
+/* Menu oculto dado */
+#interfazJuegoOcultar {
+    display: none;
+}
+
+/* Menu oculto personalizar */
+#personalizar {
+    display: none;
+}
+    
+/* Estilo tablero */
+#tablero {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+    max-height: 90vh;
+}
+
+/* Estilo celdas */
+.celdaDiv {
+    border: #000000 1px solid;
+    background-repeat: no-repeat;
+}
+
+#spritePersonaje, #spriteCofre {
+    max-height: 8vh;
+    min-height: 2vh;
+}
+
+.celdaHeroe {
+    background-color: grey !important;
+    background-image: unset !important;
+}
+
+.celdaSeleccionable {
+    background-color: #88bae6 !important;
+    background-image: unset !important;
+    border: 3px grey dotted;
+}
+
+.celdaSeleccionable:hover {
+    background-color: #1a64a3;
+}
+

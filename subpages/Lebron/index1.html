@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cuadro de Diálogo con Video</title>
+    <style>
+        dialog {
+            border: none;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            padding: 20px;
+        }
+        video {
+            width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <button id="openDialogBtn">Abrir Video</button>
+
+    <dialog id="videoDialog">
+        <video id="videoPlayer" controls>
+            <source src="media/videoplayback.mp4" type="video/mp4">
+            Tu navegador no soporta el elemento de video.
+        </video>
+        <br>
+        <button id="closeDialogBtn">Cerrar</button>
+    </dialog>
+
+    <script>
+        document.getElementById('openDialogBtn').addEventListener('click', function() {
+            const dialog = document.getElementById('videoDialog');
+            const video = document.getElementById('videoPlayer');
+            dialog.showModal();
+            video.play();
+        });
+
+        document.getElementById('closeDialogBtn').addEventListener('click', function() {
+            const dialog = document.getElementById('videoDialog');
+            const video = document.getElementById('videoPlayer');
+            video.pause();
+            dialog.close();
+        });
+    </script>
+</body>
+</html>

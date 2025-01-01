@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Búsqueda del Tesoro</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js"></script>
+</head>
+<body>
+    
+    <div id="pantalla">
+
+        <div id="titulo">
+            <h1>BIENVENIDO HÉROE</h1>
+        </div>
+
+        <div id="interfaz">
+
+            <div id="interfazNombre">
+
+                <div id="menuNombre">
+                    <label for="nombreUsuario">INTRODUCE TU NOMBRE:</label><br><br>
+                        <input type="text" name="nombreUsuario" id="nombreUsuario" autofocus maxlength="20"><br><br><br>
+                    <button id="nombreButton">ACEPTAR</button> 
+                </div>
+                
+                <div id="personalizar">
+                    <label for="lista">PERSONALIZAR:</label><br><br>
+                        <select name="lista" id="lista">
+                            <option value="morado">Morado</option>
+                            <option value="rojo">Rojo</option>
+                            <option value="amarillo">Amarillo</option>
+                            <option value="verde">Verde</option>
+                            <option value="azul">Azul</option>
+                        </select>
+                </div>
+            </div>
+
+            <div id="interfazJuego">
+
+                <button disabled id="jugarButton">JUGAR</button>
+                <div id="interfazJuegoOcultar">
+                    <img src="./img/DadoP1.png" style="max-width: 80%; max-height: 30vh;" alt="Dado" id="dadoImg"><br>
+                    <button id="dadoButton">AGITAR DADO</button>
+                </div>
+                    
+            </div>
+
+        </div>
+
+
+        <div id="tablero"></div>
+
+    </div>
+
+</body>
+</html>

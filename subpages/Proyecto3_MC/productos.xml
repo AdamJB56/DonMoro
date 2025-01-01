@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tienda>
+    <productos>
+        <herramienta tipo="arma">
+            <nombre>Arco</nombre>
+            <material>madera</material>
+            <usos>30</usos>
+            <bloques>
+                <bloque>Palo</bloque>
+                <bloque>Hilo</bloque>
+            </bloques>
+            <precio>250</precio>
+            <unidades>78</unidades>
+            <foto><![CDATA[img/arco.jpg]]></foto>
+        </herramienta>
+        <herramienta tipo="arma">
+            <nombre>Espada de Diamante</nombre>
+            <material>diamante</material>
+            <usos>1561</usos>
+            <bloques>
+                <bloque>Diamante</bloque>
+                <bloque>Palo</bloque>
+            </bloques>
+            <precio>1000</precio>
+            <unidades>1</unidades>
+            <foto><![CDATA[img/espada_diamante.jpg]]></foto>
+        </herramienta>
+        <herramienta tipo="utensilio">
+            <nombre>Pico de Hierro</nombre>
+            <material>hierro</material>
+            <usos>250</usos>
+            <bloques>
+                <bloque>Hierro</bloque>
+                <bloque>Palo</bloque>
+            </bloques>
+            <precio>150</precio>
+            <unidades>24</unidades>
+            <foto><![CDATA[img/pico_hierro.jpg]]></foto>
+        </herramienta>
+        <herramienta tipo="utensilio">
+            <nombre>Hacha de Piedra</nombre>
+            <material>piedra</material>
+            <usos>132</usos>
+            <bloques>
+                <bloque>Piedra</bloque>
+                <bloque>Palo</bloque>
+            </bloques>
+            <precio>80</precio>
+            <unidades>265</unidades>
+            <foto><![CDATA[img/hacha_piedra.jpg]]></foto>
+        </herramienta>
+        <herramienta tipo="utensilio">
+            <nombre>Azada de Diamante</nombre>
+            <material>diamante</material>
+            <usos>33</usos>
+            <bloques>
+                <bloque>Diamante</bloque>
+                <bloque>Palo</bloque>
+            </bloques>
+            <precio>120</precio>
+            <unidades>63</unidades>
+            <foto><![CDATA[img/azada_diamante.jpg]]></foto>
+        </herramienta>
+        <herramienta tipo="utensilio">
+            <nombre>Pala de Madera</nombre>
+            <material>madera</material>
+            <usos>1561</usos>
+            <bloques>
+                <bloque>Madera</bloque>
+                <bloque>Palo</bloque>
+            </bloques>
+            <precio>800</precio>
+            <unidades>0</unidades>
+            <foto><![CDATA[img/pala_madera.jpg]]></foto>
+        </herramienta>
+        <herramienta tipo="utensilio">
+            <nombre>Pico/Pala de Diamante</nombre>
+            <material>diamante</material>
+            <usos>250</usos>
+            <bloques>
+                <bloque>Diamante</bloque>
+                <bloque>Palo</bloque>
+            </bloques>
+            <precio>150</precio>
+            <unidades>87</unidades>
+            <foto><![CDATA[img/pico_diamante.jpg]]></foto>
+        </herramienta>
+        <herramienta tipo="arma">
+            <nombre>Tridente Encantado</nombre>
+            <material>diamante</material>
+            <usos>250</usos>
+            <bloques>
+                <bloque>Diamante</bloque>
+                <bloque>Corazón de Mar</bloque>
+            </bloques>
+            <precio>1200</precio>
+            <unidades>24</unidades>
+            <foto><![CDATA[img/tridente.jpg]]></foto>
+        </herramienta>
+        <herramienta tipo="arma">
+            <nombre>Escudo de Madera</nombre>
+            <material>madera</material>
+            <usos>336</usos>
+            <bloques>
+                <bloque>Madera</bloque>
+                <bloque>Hierro</bloque>
+            </bloques>
+            <precio>200</precio>
+            <unidades>0</unidades>
+            <foto><![CDATA[img/escudo.jpg]]></foto>
+        </herramienta>
+        <herramienta tipo="ropa">
+            <nombre>Casco de Diamante</nombre>
+            <material>diamante</material>
+            <usos>364</usos>
+            <bloques>
+                <bloque>Diamante</bloque>
+            </bloques>
+            <precio>600</precio>
+            <unidades>63</unidades>
+            <foto><![CDATA[img/casco_diamante.jpg]]></foto>
+        </herramienta>
+        <herramienta tipo="ropa">
+            <nombre>Peto de Hierro</nombre>
+            <material>hierro</material>
+            <usos>569</usos>
+            <bloques>
+                <bloque>Hierro</bloque>
+            </bloques>
+            <precio>650</precio>
+            <unidades>25</unidades>
+            <foto><![CDATA[img/peto_hierro.jpg]]></foto>
+        </herramienta>
+        <herramienta tipo="ropa">
+            <nombre>Pantalones de Hierro</nombre>
+            <material>hierro</material>
+            <usos>320</usos>
+            <bloques>
+                <bloque>Hierro</bloque>
+            </bloques>
+            <precio>450</precio>
+            <unidades>0</unidades>
+            <foto><![CDATA[img/pantalones_hierro.jpg]]></foto>
+        </herramienta>
+    </productos>
+</tienda>

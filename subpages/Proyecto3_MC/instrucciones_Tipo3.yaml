@@ -1,0 +1,47 @@
+Para la actividad de Tipo 3 se añadirán los siguientes elementos:
+
+En el HTML:
+      - Style: se modificará el contenido de la etiqueta style para sea único..
+      - Botón "Mostrar Todos": función onclick --> mostrarTodos --> Mostrará todos los productos, en formato de fichas con foto, nombre, material, precio, unidades y bloques por los que está formado.
+      - Botón "Madera/Diamante": función onclick --> mostrarMadera/Diamante --> Mostrará todos los productos que sean de material Madera/Piedra/Hierro/Diamante.
+      - Botón "Sin Stock": funciones onclick --> mostrarSinStock --> Mostrará todos los productos que no tengan stock.
+      - Botón "Armas/Utensilios": funciones onlcick --> mostrarArmas/Utensilios --> Mostrará los productos de tipo "Arma/Utensilio"
+      - Botón "Palas": funciones onclick --> mostrarPalas --> Mostrará los productos cuyo nombre contenga "Pala".
+      - Botón "Primero/Último": funciones onclick --> mostrarPrimero/Ultimo --> Mostrará el primer/último producto.
+      - Botón "Palo/Corazón de Mar": funciones onlcick --> mostrarPalo/Corazon --> Mostrará los productos que necesiten un bloque de "Palo/Corazón de Mar"
+      - Botón "Buenos": funciones onclick --> mostrarBuenos --> Mostrará los productos de material Diamante o Hierro.
+      - Botón "Gangas": función onclick --> mostrarGangas --> Mostrará los productos disponibles y con un precio menor de 600.
+
+Se creará un documento .js (JavaScript) que contenga funciones que:
+      - Función de cargado de documento XML: función cargarXML, como hemos hecho en clase.
+      - Función de transformación de documentos XML a HTML: función mostrarXMLProductos, similar a la realizada en clase.
+      - Muestre por defecto (al abrir la página) todos los productos: función mostrarTodos con instrucción XPath y wildcard. 
+      Hará uso de las funciones cargarXML y mostrarXMLEmpleados. Se llamará desde el script cuando se abre la página web. 
+      Además, esta función será utilizada desde el botón "Mostrar Todos".
+      - Funciones definidas en el apartado anterior, idénticas a la función "mostrarTodos" modificando únicamente la instrucción XPATH.
+
+Notas:
+      - Se recomienda empezar mostrando todos los productos, una vez se consiga, el resto de funciones son copias aproximadas de la función "mostrarTodos".
+      - Se recomienda tener en cuenta los errores en consola.
+      - El script debería ser extensible y permitir añadir las funciones hechas por vuestro compañero sin problema. 
+      - La función "cargarXML" es idéntica a la realizada en clase.
+      - La función"mostrarXMLProductos" es similar a la función "mostrarXML"
+      - Las funciones "mostrarMadera"/"mostrarEnStock"/"mostrarArmas"... y el resto, son similares a "mostrarTodoXML", cambiando la instrucción XPath.
+
+
+
+Función	                                                                                    Instrucción
+Seleccionar todos los elementos hijo:	                                                      /elemento_raíz/*
+Seleccionar un elemento jerárquicamente:	                                                      /elemento_raíz/elemento ó elemento_raíz/elemento
+Seleccionar un elemento independientemente de su posición jerárquica:	                        //elemento
+Seleccionar elementos con un valor en concreto:	                                                //elemento_raíz[elemento = “valor”]
+Seleccionar elementos con un hijo con un valor mayor/menor/igual a un valor en concreto:	      //elemento[elemento_hijo >/</= “valor”]
+Seleccionar elementos con un atributo con un valor mayor/menor/igual a un valor en concreto:	//elemento[@atributo >/</= “valor”]
+Seleccionar el elemento X hijo de un elemento:	                                                //elemento_raiz/elemento_hijo[X]
+Seleccionar el último elemento hijo de un elemento:	                                          //elemento_raiz/elemento_hijo[1]
+Seleccionar un elemento que contiene un valor de texto:	                                    //elemento[text() = “valor”]
+Seleccionar los elementos con elementos hijo que contienen un valor total o parcialmente:	      //elemento[contains(elemento_hijo, “valor”])
+Seleccionar elementos con elementos hijo que empiezan o terminan por un caracter:	            //elemento[starts-with/ends-with(elemento_hijo, “caracter”)]
+Seleccionar elementos con elementos descendientes con un valor:	                              //elemento[elemento_hijo/elemento_nieto/… =”valor”]
+Seleccionar elementos con elementos hijos con valores comprendidos entre dos valores [X,Y]:	//elemento[elemento_hijo >= “X” and elemento_hijo <= “Y”]
+Seleccionar elementos con elementos hijos con valores X o Y:                                    //elemento[elemento_hijo = “X” or elemento_hijo = “Y”]

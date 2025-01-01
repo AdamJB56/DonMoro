@@ -1,0 +1,44 @@
+@font-face {
+    font-family: "Charm";
+    src: url(./fonts/Charm-Bold.ttf);
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Charm';
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+.bordeDorado {
+    border: solid 6px #ffd700;
+    border-radius: 8px;
+}
+
+.bordeRedondo {
+    border: solid 6px transparent;
+    border-radius: 8px;
+}
+
+.fondoTitulo {
+    background-color: #000000;
+    border-radius: 8px;
+}
+
+.boton {
+    background-color: #15171a;
+    border: solid 2px #ffd700;
+    border-radius: 6px;
+}
+
+@media (max-width: 1024px) {
+    h2 {
+        font-size: large;
+    }
+}

@@ -1,0 +1,135 @@
+/* Importo una fuente descargada */
+@font-face {
+    font-family: 'Delius';
+    src: url('./media/fonts/Delius-Regular.ttf') format('truetype');
+}
+
+/* TODA LA PÁGINA */
+
+* {
+    scroll-behavior: smooth; /* Cada vez que un elemento haga scroll automatico, este sera suave y lento */
+}
+
+body {
+    text-align: center;
+    font-family: 'Delius';
+    margin: 0;
+}
+
+h1 {
+    margin: 0;
+}
+
+h2 {
+    font-size: 3vw;
+    color: white;
+}
+
+h3 {
+    color: white;
+    text-shadow: 1px 1px #ffffff;
+}
+
+/* CABECERA */
+header {
+    background-color: #303390;
+}
+
+nav {
+    background-color: #E59500;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px;
+    position: sticky;
+    top: 0;
+    font-weight: 900;
+}
+
+nav > div > a:hover {
+    color: #303390;
+}
+
+
+/* MAIN */
+main {
+    background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.5)), url(./media/images/fondo.jpg);
+    background-size: cover;
+    background-position: fixed;
+    padding: 1vh 0;
+}
+
+/* Divs de cada seccion (Primeros, segundos, etc.) */
+.listaPlatos {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/* Afecta a cada plato de todas las secciones */
+.listaPlatos > div {
+    border: solid white 3px;
+    transition: background-color 0.5s, border-radius 0.5s, color 0.5s;
+}
+
+/* Afecta solamente a la cuarta seccion, y dentro de esta a los divs de los platos, o en este caso los vinos */
+.listaPlatos:nth-of-type(4) > div:hover {
+    background-color: #4e0707;
+    border-radius: 10px;
+    color: #ffffff;
+    box-shadow: 2px 2px rgba(255, 255, 255, 0.5);
+}
+
+/* Afecta a todos los platos */
+.listaPlatos > div:hover {
+    background-color: #f7cd84;
+    border-radius: 10px;
+    color: #ffffff;
+    box-shadow: 2px 2px rgba(255, 255, 255, 0.5);
+}
+
+.imgPlato {
+    width: 15vw;
+}
+
+pre {
+    font-size: 1vw;
+}
+
+/* PIE DE PÁGINA */
+footer {
+    background-color: #303390;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: #c5c5c5;
+}
+
+.columnaFooter {
+    width: 50%;
+}
+
+
+/* Si la pantalla tiene un ancho de 500px o menos se aplican los estilos definidos abajo */
+@media (max-width: 500px) {
+    /* Los platos se muestran en forma de columna en vez de fila */
+    .listaPlatos {
+        flex-direction: column;
+    }
+
+    /* Cambio el tamaño de los titulos de cada seccion */
+    h2 {
+        font-size: 8vw;
+    }
+
+    /* Quito el fondo de Castro Urdiales y pongo uno negro simple */
+    main {
+        background: unset;
+        background-position: unset;
+        background-size: unset;
+        background-color: #000000;
+    }
+
+    /* Cambio el tamaño de las imagenes de cada plato */
+    .imgPlato {
+        width: 30vw;
+    }
+}

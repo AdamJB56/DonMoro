@@ -1,0 +1,363 @@
+
+@font-face {
+    font-family: 'Rothwood';
+    src: url(/media/fonts/FontsFree-Net-Rothwood-Book.ttf);
+}
+
+@font-face {
+    font-family: 'Rothwood Thin';
+    src: url(/media/fonts/Rothwood-Thin.otf);
+}
+
+@font-face {
+    font-family: 'Django';
+    src: url(/media/fonts/The-Django.ttf);
+}
+
+@font-face {
+    font-family: 'Stardew Valley';
+    src: url(/media/fonts/Stardew_Valley.ttf);
+}
+
+@font-face {
+    font-family: 'Lakers';
+    src: url(/media/fonts/Lakers.otf);
+}
+
+@font-face {
+    font-family: 'Vibes';
+    src: url(/media/fonts/GreatVibes.ttf);
+}
+
+@font-face {
+    font-family: 'Merienda';
+    src: url(/media/fonts/Merienda.ttf);
+}
+
+
+
+@keyframes fuego {
+    
+    0% {
+        text-shadow: none;
+    }
+
+    50% {
+        text-shadow: 0px 0px 20px #fefcc9, 2px -2px 3px #feec85, -4px -4px 5px #ffae34,
+    5px -10px 6px #ec760c, -5px -12px 8px #cd4606, 0 -15px 20px #973716, 2px
+    -15px 20px #451b0e;
+
+        color: white;
+    }
+
+    100% {
+        text-shadow: none;
+    }
+}
+
+@keyframes deslizar {
+    0% {
+        background-position: -100% 0;
+    }
+
+    100% {
+        background-position: 100% 0;
+    }
+}
+
+/* PAGINA COMPLETA */
+body {
+    text-align: center;
+    font-family: 'Rothwood', sans-serif;
+    background: black;
+    color: white;
+}
+
+h2 {
+    font-size: 2.6rem;
+    font-family: 'Rothwood Thin';
+}
+
+h3 {
+    font-family: 'Rothwood Thin';
+}
+
+p {
+    font-size: 1.3rem;
+    margin-right: 5vw;
+    margin-left: 5vw;
+}
+
+hr {
+    margin: 0;
+    height: 2px;
+    opacity: 1;
+    color: #ffffff;
+}
+
+/* Formularios */
+input {
+    width: 60%;
+    height: 15%;
+    border-radius: 7px;
+    font-family: 'Delius', sans-serif;
+    font-size: 100%;
+}
+
+input[type=submit], input[type=reset] {
+    background-color: #8706cd;
+    color: white;
+    box-shadow: #e4e4e4 1px 1px 2px;
+}
+
+input[type=submit]:hover, input[type=reset]:hover {
+    background-color: #aa18ee;
+}
+
+
+textarea {
+    width: 60%;
+    height: 20vh;
+    border-radius: 7px;
+}
+
+/* MAIN */
+
+main {
+    margin-top: 1%;
+}
+
+
+/* INTRODUCCION */
+
+#introduccion {
+}
+
+
+/* MAPA */
+
+#mapa {
+    width: 50vw;
+    height: 30vh;
+}
+
+
+/* FOOTER */
+footer {
+    animation: deslizar linear 60s infinite;
+}
+
+
+
+
+
+/* HEADER/NAVEGACION DESPLEGABLE */
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000000;
+}
+
+#logo {
+    width: 35vw;
+    height: auto;
+}
+
+#nav {
+    overflow: hidden;
+    position: relative;
+    transition: background-color 0.5s ease;
+  }
+
+#linksNav {
+    display: none;
+    background-color: #333;
+}
+
+
+#linksNav a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 1.6rem;
+    display: block;
+}
+
+#linksNav a:active{
+    background-color: #8706cd;
+    color: #bababa;
+}
+
+#linksNav a:hover{
+    background-color: #8706cd;
+    color: black;
+}
+  
+  /* Style navigation menu links */
+#nav a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+}
+  
+  /* Style the hamburger menu */
+#nav a.icono {
+    background: black;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: auto;
+}
+  
+  /* Add a grey background color on mouse-over */
+#nav a:hover {
+    background-color: #8706cd;
+    color: black;
+}
+  
+
+/* CARRUSEL */
+
+.textoCarrusel {
+    font-size: small;
+}
+
+.textoCarrusel p {
+    font-weight: lighter;
+}
+
+
+/* LISTA PROYECTOS */
+
+#otrosProyectos {
+    display: flex;
+    flex-direction: column;
+
+    margin-left: 2vw;
+    margin-right: 2vw;
+    
+    /* Efecto Parallax */
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),url(/media/img/carr2.jpeg);
+    background-attachment: fixed;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: opacity 1s ease-in-out;
+}
+
+#myList {
+    flex: 1;
+    align-self: center;
+    margin-left: 1%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.tab-content {
+    flex: 2;
+    align-self: center;
+}
+
+.list-group-item-action {
+    background-color: #333;
+    border: unset;
+    color: white;
+}
+
+.list-group-item-action.active {
+    background-color: #542083;
+    border: #8706cd solid 1px;
+}
+
+/* Botones proyectos */
+
+.botonesProyectos {
+    background-color: #8706cd;
+    min-width: 60%;
+    margin-top: 3%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    padding-right: 2%;
+    font-size: 3rem;
+}
+
+.botonesProyectos:hover {
+    background-color: #aa18ee;
+    box-shadow: #e4e4e4 1px 1px 2px;
+}
+
+#botonDjango {
+    font-family: 'Django';
+    background-color: #c90303;
+}
+
+#botonDjango:hover {
+    background-color: #c90303;
+    color: white;
+    
+}
+
+#botonTienda {
+    font-family: 'Stardew Valley';
+}
+
+#botonLebron {
+    font-family: 'Lakers';
+    background: linear-gradient(to right, #542083, #773e6f, #FDB922);
+}
+
+#botonMuseo {
+    font-family: 'Vibes';
+    background-color: white; 
+}
+
+#botonRocas {
+    font-family: 'Merienda';
+    background: linear-gradient(to right, #E59500, #303390);
+}
+
+
+@media (min-width: 1024px) {
+    #icono i {
+        font-size: 3rem; /* Ajusta el tamaño del ícono */
+    }
+
+    p, label, input {
+        font-size: 1.2rem;
+    }
+
+    .textoCarrusel {
+        font-size: xx-large;
+    }
+
+    #logo {
+        max-width: 25vw;
+        height: auto;
+    }
+
+    input {
+        width: 20vw;
+        height: 5vh;
+    }
+
+    textarea {
+        width: 20vw;
+        height: 13vh;
+    }
+
+    #otrosProyectos {
+        flex-direction: row;
+
+    }
+    
+}
+
+
+
+

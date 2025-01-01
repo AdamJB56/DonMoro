@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>TIENDA</title>
+    <link rel="shortcut icon" href="img/esmeralda.gif" type="image/x-icon">
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&family=Sedan+SC&display=swap');     
+        
+    /*Esta animación hace a las fichas de los productos flotar de arriba hacia abajo*/
+    @keyframes flotar {
+        0% {
+            transform: translateY(0px);
+        }
+
+        50% {
+            transform: translateY(-15px);
+        }
+
+        100% {
+            transform: translateY(0px);
+        }
+    }
+    
+    /*Fuentes importada, 3 formatos distintos*/
+    @font-face {
+    font-family: 'Minecraft';
+    src: url('fonts/Minecraft.woff2') format('woff2'),
+        url('fonts/Minecraft.woff') format('woff'),
+        url('fonts/Minecraft.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    }
+
+        /*Aplico que todos los scroll de la pagina sean suaves*/
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background: linear-gradient(to bottom , #9335ff, #ffd8fa);
+            color: #ffffff;
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            margin: 0;
+            font-family: 'Minecraft';
+            font-weight: 400;
+            font-style: normal;
+            min-height: 100vh;
+        }
+
+        h1 {
+            color: rgb(255, 255, 255);
+            text-shadow: #000000 5px 5px 1px;
+            text-align: center;
+            font-size: 380%;
+        }
+
+        #header {
+            text-align: center;
+        }
+
+        #datosProductos {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+            margin-top: 20px;
+            transition: all 1s;
+        }
+
+        .productoFicha {
+            padding: 10px;
+            width: 300px;
+            background-color: rgb(76, 76, 255);
+            box-shadow: rgb(85, 85, 85) 10px 10px 1px;
+            transition: all 1s;
+            border: solid 5px white;
+            animation: flotar 8s infinite;
+        }
+
+        .productoFicha:hover {
+            border-radius: 20px;
+            background-color: rgb(52, 222, 231);
+            border: solid 5px black;
+        }
+
+        .productoFicha img {
+            width: 100%;
+        }
+
+        .productoFicha h2 {
+            font-size: 25px;
+            color: yellow;
+            margin-bottom: 5px;
+            text-shadow: #000000 0px 0px 1px;
+        }
+
+        .productoFicha p {
+            font-size: 18px;
+            color: #ffffff;
+            margin-bottom: 0px;
+        }
+
+        button {
+            background-color: rgb(104, 104, 255);
+            color:  rgb(0, 0, 0);
+            border:  rgb(0, 0, 0) 5px solid;
+            padding: 8px 16px;
+            cursor: pointer;
+            font-size: 150%;
+            font-weight: bolder;
+            transition: background-color 0.3s ease;
+            font-family: 'Minecraft';
+            box-shadow: rgb(85, 85, 85) 5px 5px 1px;
+            margin: 10px;
+            transition: all 0.25s;
+        }
+
+        button:hover {
+            background-color: #ffffff;
+            border-radius: 20px;
+        }
+
+        .filtros {
+            border-top: #333 2px solid;
+            border-bottom: #333 2px solid;
+            padding: 15px;
+        }
+
+        .titulo {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .titulo p{
+            font-size: 200%;
+            color: red;
+        }
+
+        h2 {
+            color: white;
+            text-shadow: #38004f 2px 2px 1px;
+        }
+
+        /*Estilo de los h2 dentro de las fichas de los productos*/
+        .h2Ficha {
+            text-align: center;
+        }
+
+        /*Porción superior de cada producto: Tipo de item y unidades restantes*/
+        .fichaTop {
+            display: flex;
+        }
+
+        /*Estilo de los parrafos de la parte superior de cada ficha de producto*/
+        p.fichaTopParrafo {
+            font-size: 15px;
+        }
+
+        /*Diseño de la lista no ordenada*/
+        ul {
+            list-style-type: none;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="header">
+        <h1>Tienda para Aventureros</h1>
+
+        <br>
+
+        <img src="img/esmeralda.gif" alt="Un euro">
+        <img src="img/Plains_Villager_Base.png" alt="Un narigudo" title="NO ME TOQUES">
+    </div>
+    
+    <div class="filtros">
+        <h2>Productos</h2>
+        
+    <!-- Botón para escribir todos los productos -->
+        <button onclick="mostrarTodos(); scrollear();">Mostrar todos</button>
+
+        <h2>Filtros Material</h2>
+    <!-- Botones para filtrar los productos por material -->
+            <button onclick="mostrarMadera(); scrollear();">Madera</button>
+            <button onclick="mostrarDiamante(); scrollear();">Diamante</button>
+
+        <h2>Filtros Unidades</h2>
+    <!-- Botones para filtrar los productos por stock -->
+            <button onclick="mostrarSinStock(); scrollear();">Sin Stock</button>
+
+        <h2>Filtros Productos</h2>
+    <!-- Botones para filtrar los productos por tipo -->
+            <button onclick="mostrarArmas(); scrollear();">Armas</button>
+            <button onclick="mostrarUtensilios(); scrollear();">Utensilios</button>
+
+        <h2>Filtros por Nombre</h2>
+    <!-- Botones para filtrar los productos por contenido en el nombre (Pico o Pala) -->
+        <button onclick="mostrarPalas(); scrollear();">Palas</button>
+
+
+        <h2>Filtros por Orden</h2>
+    <!-- Botones para filtrar los productos por posición -->
+        <button onclick="mostrarPrimero(); scrollear();">Primer producto</button>
+        <button onclick="mostrarUltimo(); scrollear();">Ultimo producto</button>
+
+        <h2>Filtros por Piezas</h2>
+    <!-- Botones para filtrar los productos por bloques necesarios -->
+        <button onclick="mostrarPalo(); scrollear();">Palo</button>
+        <button onclick="mostrarCorazon(); scrollear();">Corazon de Mar</button>
+
+        <h2>Filtros por Calidad</h2>
+    <!-- Botones para filtrar los productos buenos o malos -->
+        <button onclick="mostrarBuenos(); scrollear();" title="Productos de hierro o diamante">Buena calidad</button>
+
+        <h2>Filtros por Gangas</h2>
+    <!-- Botones para filtrar los productos disponibles y baratos -->
+        <button onclick="mostrarGangas(); scrollear();">Ofertas</button>
+    </div>
+
+    <!-- Contenedor para mostrar los datos de los concursantes -->
+    <div id="datosProductos"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>

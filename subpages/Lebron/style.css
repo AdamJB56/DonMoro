@@ -1,0 +1,25 @@
+body {
+    text-align: center;
+    background: linear-gradient(to bottom, #2c006f, #fdba23);
+    background-attachment: fixed;
+    color: white;
+    font-weight: bolder;
+}
+
+.invisible {
+    display: none;
+}
+
+#video {
+    width: 1000px;
+}
+
+button {
+    background-color: black;
+    color: white;
+    font-weight: 1200;
+}
+
+button:hover {
+    background-color: rgb(127, 127, 127);
+}

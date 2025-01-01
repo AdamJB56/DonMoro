@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ej. 16</title>
+</head>
+
+<body>
+    
+    <!--Estilo-->
+    <style>
+        /*Estilo de los controles del audio*/
+        audio::-webkit-media-controls-panel {
+            background-color: #ff7b7b;
+        }
+
+        /*Estilo del body (Toda la página)*/
+        body {
+            text-align: center; /*Página alineada al centro*/
+            margin-left: 15%; /*Margen izq.*/
+            margin-right: 15%; /*Margen dcho.*/
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, serif; /*Fuente de la página*/
+            background-image: url(img/fondo.jpg); /*Imagen de fondo*/
+            color: #e9e9e9; /*Color de la letra*/
+        }
+
+        /*Estilo de los summary desplegables al pasar el ratón por encima*/
+        .desplegable:hover {
+            color: #ffc6c6; /*Color al hacer hover*/
+        }
+    </style>
+
+
+    <!--Cabecero de la página-->
+    <header>
+        <h1 style="font-size: 80px;">DJANGO: UNCHAINED</h1>
+    </header>
+
+    <!--Detalles de la película-->
+    <section id="detalles">
+        <details open>
+            <summary class="desplegable">DETALLES DE LA PELÍCULA</summary>
+            <p><span style="font-weight: bolder;">Django:</span> Unchained (Desencadenado): es una película basada en el año 1858 protagonizada por Jamie Foxx y dirigida por Quientin Tarantino.</p>
+            <p><span style="font-weight: bolder;">Año:</span> 2012</p>
+            <p><span style="font-weight: bolder;">Director:</span> Quentin Tarantino</p>
+        </details>
+    </section>
+
+<br> <!--Separación-->
+<hr style="border: solid #ffffff 5px; border-radius: 5px;"> <!--Borde separador-->
+
+    <!--Sección de los mejores momentos-->
+    <section id="mejMomentos">
+        <h2>MEJORES MOMENTOS</h2>
+
+<br> <!--Separación-->
+
+        <!--Primera escena destacada-->
+        <article class="escena">
+
+            <h3>Dr. Schultz mata al sheriff del pueblo</h3>
+            <p>En esta escena el Dr. Schultz y Django se acercan a la taberna de un pueblo cercano para tomar algo.
+                 El tabernero ve a Django (un negro) por lo que llama a las autoridades. El Dr.Schultz mata al sheriff del pueblo ya que era un criminal buscado por la justicia,
+                  y por ello recibe una recompensa de 200$ del marshal.</p>
+            
+            <!--Imagen y pie de foto-->
+            <figure>
+            <img src="img/Sheriff.png" alt="Se observa al sheriff tiroteado en el suelo con Dr.Schutlz al lado" width="750px" height="375px" style="border: solid #e9e9e9 1px;">
+                <figcaption>Todo el pueblo observando la discusión entre el Dr. Schultz y el tabernero con el sheriff tiroteado en el suelo.</figcaption>
+
+            </figure>
+
+        </article>
+
+<br> <!--Separación--> 
+<hr> <!--Borde separador-->
+<br> <!--Separación-->
+
+        <!--Segunda escena destacada-->
+        <article class="escena">
+
+            <h3>Tiroteo final en la mansión de "Monsieur" Calvin J. Candie</h3>
+            <p>En esta escena Django se libera de nuevo de unos esclavistas hablándoles sobre una recompensa, pero esto es mentira, y acaba matándolos y robándoles la dinamita con la que vuelve a la mansión de Calvin Candie para salvar a su prometida Broomhilda y asesinar a todos los secuaces de Candie con dos pistolas.</p>
+            
+            <!--Imagen y pie de foto-->
+            <figure>
+            <img src="img/Django_Tiroteo.png" alt="Se observa a Django manchado de sangre apuntando con un revólver" width="750px" height="375px" style="border: solid #e9e9e9 1px";>
+                <figcaption>Django en medio de una pelea en la mansión Candie.</figcaption>
+            </figure>
+
+        </article>
+
+    </section>
+
+<br> <!--Separación-->
+<hr style="border: solid #ffffff 5px; border-radius: 5px;"> <!--Borde separador-->
+
+    <!--Sección banda sonora-->
+    <section id="banda">
+        <h2>BANDA SONORA</h2>
+        <details>
+            <summary class="desplegable">Autores:</summary>
+
+            <!--Lista no ordenada de los autores-->
+            <ul style="list-style: none;">
+                <li>Luis Bacalov</li>
+                <li>Ennio Morricone</li>
+                <li>Edda Del'Orso</li>
+                <li>Jim Croce</li>
+                <li>Riz Ortolani</li>
+                <li>Annibali E I Canteore Moderni</li>
+                <li>Rick Ross</li>
+                <li>John Legend</li>
+                <li>Brother Degge</li>
+                <li>Jerry Goldsmith</li>
+            </ul>
+        </details>
+
+<br> <!--Separación-->
+
+        <audio src="audio/Django (Luis Bacalov).mp3" controls></audio> <!--Audio-->
+    </section>
+
+<br> <!--Separación-->
+<hr style="border: solid #ffffff 5px; border-radius: 5px;"> <!--Borde separador-->
+
+    <!--Sección trailer-->
+    <section id="trailer">
+        <h2>TRÁILER</h2>
+        <video src="video/Trailer_Oficial.mp4" controls width="854px" height="360px" style="border: solid white 1px;"></video> <!--Video-->
+    </section>
+
+<br> <!--Separación-->
+
+</body>
+</html>

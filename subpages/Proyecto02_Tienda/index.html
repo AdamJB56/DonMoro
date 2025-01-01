@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="images/logo.jpg" type="image/x-icon">
+</head>
+<body>
+
+    <!-- Cabecera -->
+    <header>
+        <h1>GAMES</h1>
+    </header>
+
+    <!-- Texto introductorio -->
+    <section id="introduccion">
+        <p>¡Bienvenido a nuestro rincón virtual lleno de diversión y aventuras digitales! En <span title="No tiene nada que ver con la tienda de videojuegos GAME" style="text-decoration-line: underline;">GAMES</span>, no solo vendemos videojuegos, ¡sino que también te invitamos a sumergirte en un universo donde la diversión no tiene límites!</p>
+    </section>
+
+    <hr>
+
+    <!-- Seccion lateral -->
+    <aside>
+        <ul>
+            <li><a href="#introduccion" class="lateral">INTRODUCCIÓN</a></li>
+            <li><a href="#juegos" class="lateral">JUEGOS</a></li>
+            <li><a href="#inventario" class="lateral">INVENTARIO</a></li>
+            <li><a href="#contacto" class="lateral">PEDIDOS Y CONTACTO</a></li>
+        </ul>
+    </aside>
+
+    <!-- Seccion de juegos, galeria de imagenes -->
+    <h2>JUEGOS DESTACADOS</h2>
+    <section id="juegos">
+
+        <a href="https://www.hollowknight.com">
+            <div id="img1" class="imagenes">
+                <img src="images/HK.jpg" alt="Hollow Knight">
+                <p>HOLLOW KNIGHT</p>
+            </div>
+        </a>
+        <a href="https://en.bandainamcoent.eu/dark-souls/dark-souls-iii">
+            <div id="img2" class="imagenes">
+                <img src="images/DS3.jpg" alt="Dark Souls 3">
+                <p>DARK SOULS III</p>
+            </div>
+        </a>
+
+        <a href="https://terraria.org">
+            <div id="img3" class="imagenes">
+                <img src="images/terraria.jpg" alt="Terraria">
+                <p>TERRARIA</p>
+            </div>
+        </a>
+
+        <a href="https://www.fromsoftware.jp/ww/detail.html?csm=094">
+            <div id="img4" class="imagenes">
+                <img src="images/BB.jpg" alt="Bloodborne">
+                <p>BLOODBORNE</p>
+            </div>
+        </a>
+
+        <a href="https://en.bandainamcoent.eu/elden-ring/elden-ring">
+            <div id="img5" class="imagenes">
+                <img src="images/ER.jpg" alt="Elden Ring">
+                <p>ELDEN RING</p>
+            </div>
+        </a>
+
+        <a href="https://www.nintendo.es/Juegos/Juegos-de-Nintendo-Switch/The-Legend-of-Zelda-Tears-of-the-Kingdom-1576884.html">
+            <div id="img6" class="imagenes">
+                <img src="images/zelda.jpg" alt="The Legend of Zelda: Tears Of The Kingdom">
+                <p>THE LEGEND OF ZELDA: TEARS OF THE KINGDOM</p>
+            </div>
+        </a>
+    </section>
+
+    <hr>
+
+    <!-- Seccion inventario, tabla -->
+    <h2>INVENTARIO</h2>
+    <section id="inventario">
+        <table>
+            <tr>
+               <th>NOMBRE</th>
+               <th>UNIDADES</th>
+               <th>PRECIO</th>
+            </tr>
+
+            <tr>
+                <td>The Legend of Zelda: Tears Of The Kingdom</td>
+                <td>167</td>
+                <td>59,99€</td>
+            </tr>
+            
+            <tr>
+                <td>The Witcher 3: Wild Hunt</td>
+                <td>582</td>
+                <td>29,99€</td>
+            </tr>
+
+            <tr>
+                <td>Bloodborne</td>
+                <td>1587</td>
+                <td>19,99€</td>
+            </tr>
+
+            <tr>
+                <td>Baldur's Gate III</td>
+                <td>97</td>
+                <td>69,99€</td>
+            </tr>
+
+            <tr>
+                <td>Dark Souls III</td>
+                <td>2432</td>
+                <td>44,99€</td>
+            </tr>
+
+            <tr>
+                <td>Hollow Knight (Copia digital)</td>
+                <td>-</td>
+                <td>14,99€</td>
+            </tr>
+
+            <tr>
+                <td>Elden Ring</td>
+                <td>420</td>
+                <td>55,99€</td>
+            </tr>
+
+            <tr>
+                <td>Terraria (Copia digital)</td>
+                <td>-</td>
+                <td>7,99€</td>
+            </tr>
+
+        </table>
+
+    </section>
+
+    <hr>
+
+    <!-- Seccion contacto, formularios de pedidos y de contacto -->
+    <section id="contacto">
+        <h2>PEDIDOS Y CONTACTO</h2>
+        <div id="columnas">
+            <div id="pedidoForm">
+                <h3>PEDIDOS</h3>
+                <form action="">
+                    <label for="nombre">NOMBRE:</label><br>
+                        <input type="text" name="nombre"><br><br>
+
+                    <label for="apellidos">APELLIDOS:</label><br>
+                        <input type="text" name="apellidos"><br><br>
+
+                    <label for="direccion">DIRECCIÓN:</label><br>
+                        <input type="text" name="direccion"><br><br>
+
+                    <label for="email">CORREO ELECTRÓNICO DE CONTACTO:</label><br>
+                        <input type="email" name="email" placeholder="ejemplo@ejemplo.com"><br><br>
+
+                    <label for="lista">SELECCIONE EL PRODUCTO:</label><br>
+                        <select name="lista" id="listaJuegos">
+                            <option value="tloztotk">The Legend Of Zelda: Tears Of The Kingdom</option>
+                            <option value="tw3">The Witcher 3: Wild Hunt</option>
+                            <option value="bb">Bloodborne</option>
+                            <option value="bg3">Baldur's Gate III</option>
+                            <option value="ds3">Dark Souls III</option>
+                            <option value="hk">Hollow Knight</option>
+                            <option value="er">Elden Ring</option>
+                            <option value="terr">Terraria</option>
+                        </select><br><br>
+
+                    <label for="contador">SELECCIONE LA CANTIDAD:</label><br>
+                        <input type="number" name="contador" value="1"><br><br>
+
+                    <input type="submit" value="ACEPTAR"> <input type="reset" value="RESTABLECER">
+                </form>
+            </div>
+
+            <div id="contactoForm" title="También puedes llamarnos si lo prefieres: 604928592">
+                <h3>CONTACTO</h3>
+                <form action="">
+                    <label for="emisor">De:</label>
+                        <input type="email" required placeholder="ejemplo@ejemplo.com"><br><br>
+
+                    <label for="receptor">A:</label>
+                        <input type="email" value="games@games.com" readonly><br><br>
+
+                    <label for="comentario">ESCRIBA AQUÍ SU COMENTARIO:</label><br>
+                        <textarea name="comentario"cols="30" rows="10"></textarea><br><br>
+
+                    <input type="submit" value="ACEPTAR"> <input type="reset" value="RESTABLECER">
+                    
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <br>
+
+    <footer>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+    </footer>
+
+</body>
+</html>

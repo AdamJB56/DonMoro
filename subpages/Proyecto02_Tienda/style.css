@@ -1,0 +1,305 @@
+/* Fuente importada */
+@font-face {
+    font-family: 'Electrolize';
+    src: url(fonts/Electrolize-Regular.ttf);
+}
+
+
+/* Estilo de la barra de scroll */
+::-webkit-scrollbar {
+    width: 15px;
+}
+
+::-webkit-scrollbar-track {
+    background:#282828;
+}
+::-webkit-scrollbar-thumb {
+    background: #685cf3;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #4938ff;
+}
+
+/* Comportamiento "smooth" del cursor */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Estilo del body */
+body {
+    text-align: center;
+    align-items: center;
+    margin-left: 5%;
+    margin-right: 5%;
+    height: 100%;
+    font-family: 'Electrolize';
+    font-weight: 900;
+}
+
+/* Estilo de los enlaces | Estilo de los enlaces (de la seccion "aside") al pasar el raton por encima | Estilo de los enlaces visitados | Estilo de los enlaces activos */
+a {
+    text-decoration: none;
+}
+
+.lateral:hover {
+    color: #988fff;
+    cursor: url('cursors/PM.png'), auto;
+}
+
+a:visited {
+    color: #695cff;
+}
+
+a:active {
+    color: #d400d4;
+}
+
+
+/* Titulos */
+h1 {
+    font-size: 40px;
+    animation: moverTitulo 5s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+
+/* Cabecera */
+header {
+   
+}
+
+
+/* Texto introductorio */
+#introduccion {
+    font-size: 20px;
+}
+
+
+/* Sección lateral */
+aside {
+    position: absolute;
+    background-color: #3f3f3f;
+    float: left;
+    height: 52vw;
+    width: 12vw;
+    border: 10px solid #282828;
+    border-radius: 14px;
+}
+
+ul {
+    list-style: none;
+    display: inline; /* Esta propiedad hace que los elementos "li"  */
+    vertical-align: middle;
+}
+
+li {
+    padding-top: 3px;
+    padding-bottom: 3px;
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+li:hover {
+    background-color: #685cf3;
+}
+
+
+/* Seccion juegos (galeria de imagenes) */
+img {
+    width: 22vw;
+    height: 22vw;
+}
+
+#juegos {
+    display: grid;
+    grid-gap: 1vw;
+    grid-template-columns: max-content max-content min-content; 
+    grid-template-areas:
+    "img1 img2 img3"
+    "img4 img5 img6"
+    ;
+    margin-left: 17%; /* Con este margen consigo que haya espacio entre la lista lateral "aside" y la galeria de imagenes */
+}
+
+.imagenes {
+    position: relative;
+    border: 10px solid #282828;
+    border-radius: 14px;
+    background-image: linear-gradient(to bottom right, #353535, #000000);
+    transition: transform 1s, background-image 6s, color 1s, text-shadow 8s, border-radius 1s; /* Transicion 1 */
+    z-index: 0;
+}
+
+.imagenes:hover {
+    transform: scale(1.5);
+    background-image: linear-gradient(to bottom right, #000000, #353535);
+    color: white;
+    text-shadow: #d3d3d3 1px 1px;
+    border-radius: 0px 0px 50px 0px;
+    z-index: 1000;
+}
+
+/* Asignacion de las grid area. Los hover hacen que cambie el cursor según el juego seleccionado, cambiando este a algo representativo del juego */
+#img1 {
+    grid-area: img1;
+}#img1:hover {cursor: url('cursors/HKcursor.png'), auto;}
+
+#img2 {
+    grid-area: img2;
+}#img2:hover {cursor: url('cursors/coiled.png'), auto;}
+
+#img3 {
+    grid-area: img3;
+}#img3:hover {cursor: url('cursors/pickTerraria.png'), auto;}
+
+#img4 {
+    grid-area: img4;
+}#img4:hover {cursor: url('cursors/eye.png'), auto;}
+
+#img5 {
+    grid-area: img5;
+}#img5:hover {cursor: url('cursors/rueda.png'), auto;}
+
+#img6 {
+    grid-area: img6;
+}#img6:hover {cursor: url('cursors/master.png'), auto;}
+
+
+/* Seccion inventario (tabla) */
+table {
+    margin-left: auto;
+    margin-right: auto;
+    border: 6px #282828 solid;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th {
+    border-top: 4px #282828 solid;
+    border-bottom: 4px #282828 solid;
+    border-collapse: collapse;
+}
+
+tr, td {
+    border: 1px #282828 solid;
+    border-collapse: collapse;
+    transition: transform 3s; /* Transicion 2 */
+}
+
+table tr:nth-child(even) {
+    background-color: #988fff;
+}
+
+tr:hover {
+    transform: scale(1.08);
+}
+
+
+/* Sección contacto */
+#contacto {}
+
+#columnas {
+    display: flex; /* Con esta propiedad, junto con "flex" en cada formulario, consigo que los 2 forms se coloquen uno al lado del otro */
+}
+
+#pedidoForm {
+    flex: 1;
+    background-color: #f0f8ff;
+    border: 6px solid #282828;
+    border-collapse: collapse;
+}
+
+#contactoForm {
+    flex: 1;
+    background-color: #988fff;
+    border: 6px solid #282828;
+    border-collapse: collapse;
+}
+
+/* Estilo del form */
+input[type] {
+    font-family: 'Electrolize';
+    border: black 3px solid;
+    border-radius: 6px;
+}
+
+input[type]:hover {
+    animation: moverInput 2s;
+}
+
+input[type=reset], input[type=submit] {
+    background-color: #695cff;
+    color: white; 
+}
+
+/* Banner */
+footer {
+    height: auto;
+    height: fit-content;
+    background-image: url(images/banner2.png);
+    background-repeat: repeat-x;
+}
+
+textarea {
+    width: 50%;
+}
+
+
+/* Animaciones */
+
+/* He cogido esta animacion de esta pagina https://unused-css.com/blog/css-shake-animation/ */
+@keyframes moverInput {
+    0%, 100% {
+        transform: rotate(0deg);
+    }
+
+    25% {
+        transform: rotate(2deg);
+    }
+
+    75% {
+        transform: rotate(-2deg);
+    }
+}
+
+/* Esta animacion desplaza horizontalmente, de dcha. a izq. */
+@keyframes moverTitulo {
+   
+
+    25% {
+        transform: translateX(2vw);
+    }
+
+    75% {
+        transform: translateX(-2vw);
+    }
+}
+
+
+/* Media queries*/
+@media (max-width: 500px) {
+    /* Reduzco el tamaño de las letras de toda la pagina */
+    li, p {
+        font-size: 13px;
+    }
+
+    /* Aplico un margen a la barra lateral para evitar que solape el resto de elementos de la seccion ""juegos */
+    aside {
+        margin-top: 15%;
+    }
+
+    /* Aplico un espacio entre las imagenes de los juegos y la barra lateral para evitar solapamientos */
+    .imagenes {
+        padding-left: 5%;
+    }
+
+    /* Quito la propiedad "flex" a la seccion de los formulario para que se coloquen uno debajo de otro y entren mejor en una pantalla mas pequeña */
+    #columnas {
+        display: unset;
+    }
+}
