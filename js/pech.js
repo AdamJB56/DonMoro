@@ -71,7 +71,7 @@ function inicio() {
 
     function reproduccionAudio() {
     
-        let audio = new Audio("../media/audio/VideoPech.mp3");
+        let audio = new Audio("/media/audio/VideoPech.mp3");
 
         let botonReproducir = document.getElementById("botonReproducir");
         let botonPausar = document.getElementById("botonPausar");
