@@ -1,0 +1,61 @@
+
+.imagenPechIzq {
+    position: relative;
+    left: -100%;
+    transition: left 1s ease;
+    width: 50%;
+    height: auto;
+    overflow: hidden;
+}
+
+.imagenPechDcha {
+    position: relative;
+    right: -100%;
+    transition: right 1s ease;
+    width: 50%;
+    height: auto;
+    overflow: hidden;
+}
+
+.divPech {
+    max-width: 100vw;
+    overflow: hidden;
+}
+
+#divLyrics {
+    width: 50%;
+    height: 17vh; /* Limita la altura visible */
+    margin: 20px auto;
+    overflow: hidden; /* Oculta el texto que se desborda */
+    border: 1px solid #ccc;
+    padding: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Texto interno */
+#lyrics {
+    position: relative; /* Animación del texto */
+    animation: scrollearTexto 56s linear;
+    animation-play-state: paused;
+}
+
+/* Animación */
+@keyframes scrollearTexto {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-100%); /* Desplaza todo el texto hacia arriba */
+    }
+}
+
+
+@media (max-width: 1024px) {
+    .imagenPechIzq, .imagenPechDcha {
+        width: 95%;
+    }
+
+    #divLyrics {
+        height: 23vh;
+    }
+}
