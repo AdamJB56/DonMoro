@@ -100,7 +100,7 @@ input {
     width: 60%;
     height: 15%;
     border-radius: 7px;
-    font-family: 'Delius', sans-serif;
+    font-family: 'Rothwood', sans-serif;
     font-size: 100%;
 }
 
@@ -223,12 +223,17 @@ header {
 
 /* CARRUSEL */
 
-.textoCarrusel {
-    font-size: small;
+.botonCarrusel {
+    border-radius: 7px;
+    font-family: 'Rothwood', sans-serif;
+    background-color: #8706cd;
+    color: white;
+    box-shadow: #e4e4e4 1px 1px 2px;
+    font-size: 4vw;
 }
 
-.textoCarrusel p {
-    font-weight: lighter;
+.botonCarrusel:hover {
+    background-color: #aa18ee;
 }
 
 
@@ -354,6 +359,10 @@ header {
     #otrosProyectos {
         flex-direction: row;
 
+    }
+
+    .botonCarrusel {
+        font-size: 2vw;
     }
     
 }

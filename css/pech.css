@@ -3,8 +3,6 @@
     position: relative;
     left: -100%;
     transition: left 1s ease;
-    width: 50%;
-    height: auto;
     overflow: hidden;
 }
 
@@ -12,8 +10,6 @@
     position: relative;
     right: -100%;
     transition: right 1s ease;
-    width: 50%;
-    height: auto;
     overflow: hidden;
 }
 
@@ -22,20 +18,54 @@
     overflow: hidden;
 }
 
+.divPech img {
+    max-height: 80vh;
+}
+
+.botonAudio {
+    border-radius: 7px;
+    font-family: 'Rothwood', sans-serif;
+    background-color: #8706cd;
+    color: white;
+    box-shadow: #e4e4e4 1px 1px 2px;
+    font-size: 2vw;
+}
+
+.botonAudio:hover {
+    background-color: #aa18ee;
+}
+
 #divLyrics {
     width: 50%;
     height: 17vh; /* Limita la altura visible */
     margin: 20px auto;
-    overflow: hidden; /* Oculta el texto que se desborda */
+    overflow: scroll; /* Oculta el texto que se desborda */
     border: 1px solid #ccc;
     padding: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
+#divLyrics::-webkit-scrollbar {
+    width: 12px;
+}
+
+/* Fondo del área de la barra */
+#divLyrics::-webkit-scrollbar-track {
+    background: #000; /* Color del track */
+    border-radius: 10px; /* Opcional: esquinas redondeadas */
+}
+
+/* Color y forma de la barra de desplazamiento */
+#divLyrics::-webkit-scrollbar-thumb {
+background: #8706cd; /* Color de la barra */
+border-radius: 10px; /* Redondeo */
+border: 2px solid #ffffff; /* Espaciado y color alrededor */
+}
+
 /* Texto interno */
 #lyrics {
     position: relative; /* Animación del texto */
-    animation: scrollearTexto 56s linear;
+    animation: scrollearTexto 63s linear;
     animation-play-state: paused;
 }
 
@@ -57,5 +87,9 @@
 
     #divLyrics {
         height: 23vh;
+    }
+
+    .botonAudio {
+        font-size: 4vw;
     }
 }

@@ -57,29 +57,16 @@ function inicio() {
 
     cambiarColorHeader();
 
-    let otrosProyectos = document.getElementById("otrosProyectos");
+    function cursorChicote() {
+        let random = Math.random() < 0.01;
 
-    let botonesProyectos = document.getElementsByClassName("botonesProyectos");
-
-    for (const element of botonesProyectos) {
-        element.addEventListener("mouseenter", cambiarFondoListaProyectos);
-        element.addEventListener("touchstart", cambiarFondoListaProyectos);
-    }
-
-    function cambiarFondoListaProyectos(ev) {
-        let tipo = ev.target.getAttribute("tipo");
-
-        if (tipo == "django") {
-            otrosProyectos.style.background = "linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),url(./media/img/fondoDjango.jpg) center / cover no-repeat fixed";
-        } else if (tipo == "tienda") {
-            otrosProyectos.style.background = "linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),url(./media/img/carr4.jpeg) center / cover no-repeat fixed";
-        } else if (tipo == "lebron"){
-            otrosProyectos.style.background = "linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),url(./media/img/fondoLebron.jpg) center / cover no-repeat fixed";
-        } else if (tipo == "museo") {
-            otrosProyectos.style.background = "linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),url(./media/img/negros.gif) center / cover no-repeat fixed";
-        } else if (tipo == "rocas") {
-            otrosProyectos.style.background = "linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),url(./media/img/carr9.jpeg) center / cover no-repeat fixed";
+        if (random) {
+            document.body.style.cursor = "url('./media/img/chicote.png'), auto";
         }
+
+        console.log(random);
     }
+
+    cursorChicote();
 
 }

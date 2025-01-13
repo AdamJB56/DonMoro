@@ -52,7 +52,7 @@ nav > div > a:hover {
 
 /* MAIN */
 main {
-    background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.5)), url(./media/images/fondo.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.8)), url(./media/images/fondo.jpg);
     background-size: cover;
     background-position: fixed;
     padding: 1vh 0;
