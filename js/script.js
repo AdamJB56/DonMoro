@@ -6,13 +6,15 @@ function inicio() {
     //Funcion que genera imagenes en el pie de pagina
     function imagenesPieDePagina() {
 
-    let aleatorio = Math.floor(Math.random() * 12 + 1);
+    let aleatorio = Math.floor(Math.random() * 13 + 1);
     console.log(aleatorio);
 
     let footer = document.getElementsByTagName("footer");
 
     if (aleatorio == 12) {
         footer[0].style.background = `url(./media/img/guille.gif) repeat-x`;
+    } else if (aleatorio == 13) {
+        footer[0].style.background = `url(./media/img/jon.gif) repeat-x`;
     } else {
         footer[0].style.background = `url(./media/img/carr${aleatorio}.jpeg) repeat-x`;
     }
